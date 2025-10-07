@@ -429,6 +429,7 @@
   .new-offer-sec {
     width: 100%;
     padding: 1rem 4.1vw 0 4.1vw;
+    min-height: 100vh;
   }
 
   .new-offer-sec__container {
@@ -446,14 +447,19 @@
     margin: 12px 0 0 0;
   }
 
+  .new-offer-sec__tip {
+    margin-bottom: 10rem;
+  }
+
   .new-offer-sec__main__buttons {
     display: none;
   }
 
   .footer__buttons {
+    background-color: #fff;
     display: flex;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     align-items: center;
@@ -485,9 +491,9 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
-    bottom: 75px;
+    bottom: 4.688rem;
     padding: 1rem 4.1vw;
     background-color: #e8f6f5;
     /* margin-top: 100%; */
@@ -545,8 +551,7 @@
     margin-right: 4px;
   }
 
-  .see-my-offers-button{
+  .see-my-offers-button {
     display: none;
   }
 }
-
