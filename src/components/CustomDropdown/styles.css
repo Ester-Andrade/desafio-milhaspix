@@ -1,0 +1,97 @@
+.custom-select,
+::picker(select) {
+  appearance: base-select;
+}
+
+.custom-select {
+  min-width: 160px;
+  height: 2.5rem;
+  padding: 0.625rem 1rem;
+  border: 1px solid var(--PB3);
+  border-radius: 9999px;
+  font-family: var(--Plus-Jakarta-Sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--PB5);
+  transition: 0.4s;
+}
+
+.custom-select:focus {
+  outline: none;
+}
+
+.custom-select :hover,
+.custom-select :focus {
+  background: var(--primary1);
+}
+
+.custom-select::picker-icon {
+  content: url(../../config/assets/arrow-icon.svg);
+  transition: 0.4s rotate;
+}
+
+.custom-select:open::picker-icon {
+  rotate: 180deg;
+}
+
+::picker(select) {
+  border: none;
+}
+
+.custom-select option {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  border: 1px solid var(--PB3);
+  background: var(--PB1);
+  padding: 10px;
+  transition: 0.4s;
+
+  font-family: var(--Plus-Jakarta-Sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--PB5);
+}
+
+.custom-select option:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+.custom-select option:last-of-type {
+  border-radius: 0 0 8px 8px;
+}
+
+.custom-select option:not(option:last-of-type) {
+  border-bottom: none;
+}
+
+.custom-select option:hover,
+.custom-select option:focus {
+  background: var(--primary1);
+}
+
+.custom-select option::checkmark {
+  order: 1;
+  margin-left: auto;
+  content: '';
+}
+
+::picker(select) {
+  opacity: 0;
+  transition: all 0.4s allow-discrete;
+}
+
+::picker(select):popover-open {
+  opacity: 1;
+}
+
+@starting-style {
+  ::picker(select):popover-open {
+    opacity: 0;
+  }
+}
+
+::picker(select) {
+  top: calc(anchor(bottom) + 1px);
+  left: anchor(10%);
+}

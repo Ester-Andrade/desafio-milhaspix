@@ -1,0 +1,86 @@
+.form-nav-item {
+  display: flex;
+  align-items: center;
+  padding: 0 0.906rem;
+}
+
+.form-nav-item-current {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 9999px;
+  background-color: var(--PB3);
+}
+
+.dot-current {
+  background-color: var(--primary2);
+}
+
+.dot-passed {
+  background-color: var(--PB1);
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background-color: var(--PB1);
+  border: 1px solid var(--PB3);
+  border-radius: 9999px;
+  margin: 4px 0;
+}
+
+.circle-current {
+  border: 1px solid var(--primary2);
+  box-shadow: 0px 0px 0px 4px #1e90ff40;
+}
+
+.circle-passed {
+  border: 1px solid var(--primary2);
+  background-color: var(--primary2);
+}
+
+.line {
+  width: 2px;
+  height: 1.5rem;
+}
+
+.FormNav-info {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 14.5px;
+}
+
+.step-number {
+  font-family: var(--DM-Sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--PB5);
+}
+
+.step-name {
+  font-family: var(--DM-Sans);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--PB5);
+  margin-top: 0.125rem;
+}
+
+@media screen and (max-width: 840px) {
+  .form-nav{
+    display: none;
+  }
+}

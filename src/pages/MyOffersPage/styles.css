@@ -1,0 +1,368 @@
+.my-offers-sec {
+  width: 100%;
+  padding: 0 7.8vw;
+}
+
+.my-offers-sec__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1500px;
+  margin: 1.625rem auto;
+}
+
+.my-offers-sec__title {
+  font-family: var(--Plus-Jakarta-Sans);
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #6b7280;
+}
+
+.my-offers-sec__content {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  border: 1px solid var(--PB3);
+  border-radius: 20px;
+}
+
+.my-offers-sec__content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 26px 20px 22px;
+}
+
+.fields-div {
+  display: flex;
+  justify-content: end;
+  width: 80%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.5rem;
+  flex: 2;
+  max-width: 352px;
+  border: 1px solid var(--PB3);
+  border-radius: 9999px;
+  padding: 0 0.75rem 0 1rem;
+  margin-right: 12px;
+}
+
+.search-input {
+  border: none;
+  width: 100%;
+  font-family: var(--Plus-Jakarta-Sans);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--PB5);
+  text-overflow: ellipsis;
+}
+
+.search-input::placeholder {
+  color: var(--PB3);
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+.search-submit {
+  background-color: transparent;
+  margin-left: 0.625rem;
+}
+
+.search-icon {
+  width: 1.375rem;
+  height: 1.375rem;
+  margin: 0.25rem;
+}
+
+.data-table-container {
+  border-top: 1px solid var(--PB3);
+  width: 100%;
+  padding-bottom: 8px;
+}
+
+.data-table {
+  width: 100%;
+  font-family: var(--Plus-Jakarta-Sans);
+  color: var(--PB5);
+
+  & thead {
+    font-size: 0.875rem;
+    font-weight: 700;
+    border-bottom: 1px solid var(--PB3);
+  }
+
+  & tbody {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  & th,
+  td {
+    padding: 12px 0;
+    vertical-align: middle;
+  }
+
+  & th:first-of-type,
+  td:first-of-type {
+    padding-left: 20px;
+  }
+
+  & th:last-of-type,
+  td:last-of-type {
+    padding-right: 20px;
+  }
+}
+
+.table-program-container {
+  display: flex;
+  align-items: center;
+}
+
+.table-program__logo {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 8px;
+}
+
+.table-program__name {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.table-program__type {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--PB5);
+  line-height: normal;
+  text-align: left;
+}
+
+.table-status-active {
+  display: inline-block;
+  padding: 0.25rem 1.375rem;
+  background-color: #d1fae5;
+  border-radius: 9999px;
+
+  & .table-status__dot {
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 9999px;
+    background-color: #10b981;
+    margin-right: 4px;
+    margin-bottom: 0.063rem;
+  }
+
+  & p {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: normal;
+    color: #065f46;
+  }
+}
+
+.table-status-in-use {
+  display: inline-block;
+  padding: 0.25rem 1.375rem;
+  background-color: #c1d8ee;
+  border-radius: 9999px;
+
+  & .table-status__dot {
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 9999px;
+    background-color: var(--primary2);
+    margin-right: 4px;
+    margin-bottom: 0.063rem;
+  }
+
+  & p {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: normal;
+    color: #002040;
+  }
+}
+
+.table-status-inactive {
+  display: inline-block;
+  padding: 0.25rem 1.375rem;
+  background-color: #fad1d2;
+  border-radius: 9999px;
+
+  & .table-status__dot {
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 9999px;
+    background-color: #b91013;
+    margin-right: 4px;
+    margin-bottom: 0.063rem;
+  }
+
+  & p {
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: normal;
+    color: #5f0607;
+  }
+}
+
+.data-cards {
+  display: none;
+}
+
+@media screen and (max-width: 840px) {
+  .my-offers-sec {
+    width: 100%;
+    padding: 0;
+  }
+
+  .my-offers-sec__header {
+    border-bottom: 1px solid var(--PB3);
+    padding: 1.25rem 4.1vw;
+    margin: 0;
+    align-items: center;
+  }
+
+  .my-offers-sec__title {
+    font-size: 1rem;
+  }
+
+  .my-offers-sec__content {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    padding: 1.25rem 4.1vw;
+  }
+
+  .my-offers-sec__content-header {
+    width: 100%;
+    margin: 0;
+  }
+
+  .all-offers {
+    display: none;
+  }
+
+  .fields-div {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: none;
+  }
+
+  .search-input {
+    font-size: 0.875rem;
+  }
+
+  .search-icon {
+    width: 1.125rem;
+    height: 1.125rem;
+  }
+
+  .data-table-container {
+    border-top: none;
+  }
+
+  .data-table {
+    display: none;
+  }
+
+  .data-cards {
+    display: block;
+  }
+
+  .data-card {
+    border: 1px solid var(--PB3);
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: var(--Plus-Jakarta-Sans);
+    color: var(--PB5);
+  }
+
+  .data-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--PB3);
+    padding: 12px;
+  }
+
+  .data-card__header-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .card-program-logo {
+    height: 2.375rem;
+    width: 2.375rem;
+    margin-right: 12px;
+  }
+
+  .card-program-name {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+  }
+
+  .card-program-type {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  .table-status-active p,
+  .table-status-inactive p,
+  .table-status-in-use p {
+    font-size: 0.75rem;
+  }
+
+  .data-card__header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .card-date {
+    font-size: 0.625rem;
+    font-weight: 500;
+    margin-top: 0.25rem;
+  }
+
+  .data-card__content {
+    padding: 12px;
+  }
+
+  .data-card__content__line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  .data-card__content__line-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .data-card__content__line-info {
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+}

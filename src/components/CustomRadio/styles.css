@@ -1,0 +1,38 @@
+.radio-label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.75rem;
+  min-width: 8rem;
+  flex: 1;
+  border: 1px solid var(--PB3);
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+.radio-label input {
+  display: none;
+}
+
+.radio-label span {
+  font-family: var(--DM-Sans);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #CBD5E1;
+}
+
+.radio-label-img{
+  filter: opacity(40%);
+}
+
+.radio-label .radio-input:checked + span {
+  color: var(--PB5);
+  
+  & img {
+    filter: opacity(100%);
+  }
+}
+
+.radio-label:has(.radio-input:checked) {
+  border: 2px solid var(--primary2);
+}
